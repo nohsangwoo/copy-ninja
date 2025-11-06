@@ -141,6 +141,160 @@ export default function ThemePresetsSection() {
           </div>
         </div>
       </div>
+
+      {/* Preview Card */}
+      <div className="max-w-5xl mx-auto px-6 lg:px-8 mt-20">
+        <div className="bg-card rounded-[1.25rem] shadow-2xl border border-border overflow-hidden">
+          {/* Header with Account Selector */}
+          <div className="flex items-center justify-center px-4 py-3 border-b border-border">
+            <button className="h-9 w-full max-w-xs justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-xs flex items-center gap-2">
+              <span className="flex items-center gap-2">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="h-4 w-4">
+                  <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" fill="currentColor"/>
+                </svg>
+                <span className="text-sm">Alicia Koch</span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 opacity-50">
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </button>
+          </div>
+
+          <div className="border-b border-border"/>
+
+          {/* Inbox Header */}
+          <div className="flex items-center px-4 py-3 justify-between">
+            <h1 className="text-xl font-bold">Inbox</h1>
+            <div className="inline-flex h-9 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground">
+              <button className="inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-xs font-medium bg-background text-foreground shadow-xs">
+                All mail
+              </button>
+              <button className="inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-xs font-medium">
+                Unread
+              </button>
+            </div>
+          </div>
+
+          <div className="border-b border-border"/>
+
+          {/* Email List */}
+          <div className="p-4 space-y-2 max-h-[500px] overflow-y-auto">
+            <button className="flex flex-col items-start gap-2 rounded-lg border p-3 text-left text-sm transition-all bg-muted w-full hover:bg-accent">
+              <div className="flex w-full flex-col gap-1">
+                <div className="flex items-center">
+                  <div className="font-semibold">William Smith</div>
+                  <div className="ml-auto text-xs">about 2 years ago</div>
+                </div>
+                <div className="text-xs font-medium">Meeting Tomorrow</div>
+              </div>
+              <div className="text-muted-foreground line-clamp-2 text-xs">
+                Hi, let's have a meeting tomorrow to discuss the project. I've been reviewing the project details and have some ideas I'd like to share. It's crucial that we align on our next steps to ensure the project's success.
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold bg-secondary text-secondary-foreground">
+                  meeting
+                </div>
+                <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold bg-primary text-primary-foreground shadow">
+                  work
+                </div>
+                <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold bg-secondary text-secondary-foreground">
+                  important
+                </div>
+              </div>
+            </button>
+
+            <button className="flex flex-col items-start gap-2 rounded-lg border p-3 text-left text-sm transition-all w-full hover:bg-accent">
+              <div className="flex w-full flex-col gap-1">
+                <div className="flex items-center">
+                  <div className="font-semibold">Alice Smith</div>
+                  <div className="ml-auto text-xs text-muted-foreground">about 2 years ago</div>
+                </div>
+                <div className="text-xs font-medium">Re: Project Update</div>
+              </div>
+              <div className="text-muted-foreground line-clamp-2 text-xs">
+                Thank you for the project update. It looks great! I've gone through the report, and the progress is impressive. The team has done a fantastic job, and I appreciate the hard work everyone has put in.
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold bg-primary text-primary-foreground shadow">
+                  work
+                </div>
+                <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold bg-secondary text-secondary-foreground">
+                  important
+                </div>
+              </div>
+            </button>
+
+            <button className="flex flex-col items-start gap-2 rounded-lg border p-3 text-left text-sm transition-all w-full hover:bg-accent">
+              <div className="flex w-full flex-col gap-1">
+                <div className="flex items-center">
+                  <div className="font-semibold">Bob Johnson</div>
+                  <div className="ml-auto text-xs text-muted-foreground">over 2 years ago</div>
+                </div>
+                <div className="text-xs font-medium">Weekend Plans</div>
+              </div>
+              <div className="text-muted-foreground line-clamp-2 text-xs">
+                Any plans for the weekend? I was thinking of going hiking in the nearby mountains. It's been a while since we had some outdoor fun.
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold text-foreground">
+                  personal
+                </div>
+              </div>
+            </button>
+
+            <button className="flex flex-col items-start gap-2 rounded-lg border p-3 text-left text-sm transition-all w-full hover:bg-accent">
+              <div className="flex w-full flex-col gap-1">
+                <div className="flex items-center">
+                  <div className="flex items-center gap-2">
+                    <div className="font-semibold">Emily Davis</div>
+                    <span className="flex h-2 w-2 rounded-full bg-blue-600"></span>
+                  </div>
+                  <div className="ml-auto text-xs text-muted-foreground">over 2 years ago</div>
+                </div>
+                <div className="text-xs font-medium">Re: Question about Budget</div>
+              </div>
+              <div className="text-muted-foreground line-clamp-2 text-xs">
+                I have a question about the budget for the upcoming project. It seems like there's a discrepancy in the allocation of resources.
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold bg-primary text-primary-foreground shadow">
+                  work
+                </div>
+                <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold bg-secondary text-secondary-foreground">
+                  budget
+                </div>
+              </div>
+            </button>
+
+            <button className="flex flex-col items-start gap-2 rounded-lg border p-3 text-left text-sm transition-all w-full hover:bg-accent">
+              <div className="flex w-full flex-col gap-1">
+                <div className="flex items-center">
+                  <div className="flex items-center gap-2">
+                    <div className="font-semibold">Michael Wilson</div>
+                    <span className="flex h-2 w-2 rounded-full bg-blue-600"></span>
+                  </div>
+                  <div className="ml-auto text-xs text-muted-foreground">over 2 years ago</div>
+                </div>
+                <div className="text-xs font-medium">Important Announcement</div>
+              </div>
+              <div className="text-muted-foreground line-clamp-2 text-xs">
+                I have an important announcement to make during our team meeting. It pertains to a strategic shift in our approach to the upcoming product launch.
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold bg-secondary text-secondary-foreground">
+                  meeting
+                </div>
+                <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold bg-primary text-primary-foreground shadow">
+                  work
+                </div>
+                <div className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold bg-secondary text-secondary-foreground">
+                  important
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

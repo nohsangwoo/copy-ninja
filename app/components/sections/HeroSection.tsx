@@ -28,13 +28,13 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-6 py-3 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-all shadow-md hover:shadow-lg font-medium flex items-center justify-center gap-2">
+            <button className="px-8 h-12 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-all shadow-md hover:shadow-lg font-medium inline-flex items-center justify-center gap-2">
               Start Customizing
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </button>
-            <button className="px-6 py-3 bg-secondary hover:bg-secondary/80 rounded-xl transition-colors font-medium border border-border">
+            <button className="px-8 h-12 bg-secondary hover:bg-secondary/80 rounded-full transition-colors font-medium border border-border inline-flex items-center justify-center">
               View Examples
             </button>
           </div>
