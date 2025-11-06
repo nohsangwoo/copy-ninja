@@ -25,6 +25,9 @@ export default function Header() {
               <a href="#features" className="hover:text-foreground transition-colors">
                 Features
               </a>
+              <a href="/todo" className="hover:text-foreground transition-colors">
+                Todo List
+              </a>
               <a href="#pricing" className="hover:text-foreground transition-colors">
                 Pricing
               </a>
